@@ -1,6 +1,4 @@
-package com.practice.leetcode;
-
-import java.lang.reflect.Array;
+package com.leetcode.orginal;
 
 public class PalindromeNumber {
 
@@ -16,7 +14,7 @@ public class PalindromeNumber {
      return false;
     }
     public static void main(String[] args) {
-        int input = 10;
+        int input = -121;
         System.out.println(palindromeNUmber(input));
     }
 
