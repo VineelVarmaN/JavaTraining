@@ -2,16 +2,11 @@ package javatraining.W3Resource.basic_part1;
 
 public class FindPrimeNumbers {
     public static void main(String[] args) {
-        //6n+-1 = prime number
-        int additionOfPrimeNumbers = 0;
-        for (int i =1; i<17; i++){
-            System.out.println("before adding "+additionOfPrimeNumbers);
-            additionOfPrimeNumbers += (6*i)-1;
-            //System.out.println((6*i)+1);
-            //System.out.println((6*i)-1);
-
-            System.out.println((6*i)-1);
-            System.out.println("after adding "+additionOfPrimeNumbers);
+        int additionOfPrimeNumbers = 17;
+        for (int i =4; i<=100; i++){
+            if (i%2 !=0 && i%3 !=0 && i%5 !=0 && i%7 !=0){
+                additionOfPrimeNumbers += i;
+            }
         }
         System.out.println(additionOfPrimeNumbers);
     }
