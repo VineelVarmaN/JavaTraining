@@ -1,4 +1,4 @@
-package javatraining.learningSamples.SamplePrograms;
+package javatraining.learningSamples.SamplePrograms.others;
 
 
 import java.util.Arrays;

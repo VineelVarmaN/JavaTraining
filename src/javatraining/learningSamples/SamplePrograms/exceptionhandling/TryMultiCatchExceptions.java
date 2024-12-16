@@ -1,4 +1,4 @@
-package javatraining.learningSamples.SamplePrograms;
+package javatraining.learningSamples.SamplePrograms.exceptionhandling;
 
 public class TryMultiCatchExceptions {
     public void handleExceptionsUsingMultiCatch(){

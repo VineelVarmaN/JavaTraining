@@ -1,4 +1,4 @@
-package javatraining.learningSamples.SamplePrograms;
+package javatraining.learningSamples.SamplePrograms.others;
 
 public class SwapTwoNumbers {
     static void swappingNumbers(int a, int c){

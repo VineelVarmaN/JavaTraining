@@ -1,4 +1,4 @@
-package javatraining.learningSamples.SamplePrograms;
+package javatraining.learningSamples.SamplePrograms.others;
 
 public class PrimeNumbers {
     static boolean isPrimeOrNot(int j){
