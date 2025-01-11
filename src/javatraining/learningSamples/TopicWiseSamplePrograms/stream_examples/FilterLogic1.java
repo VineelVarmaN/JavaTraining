@@ -21,7 +21,7 @@ class Product{
                 '}';
     }
 }
-public class FilterLogicExamples1 {
+public class FilterLogic1 {
     public static void main(String[] args) {
         List<Product> productList = new ArrayList<>();
         productList.add(new Product(1, "Pillow", 3000));

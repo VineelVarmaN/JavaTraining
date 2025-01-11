@@ -3,7 +3,7 @@ package javatraining.learningSamples.TopicWiseSamplePrograms.stream_examples;
 import java.util.Arrays;
 import java.util.List;
 
-public class FilterLogicExamples {
+public class FilterLogic {
 
     //to print only even numbers
     public static void printEvenNumbersFromList(List<Integer> num){
