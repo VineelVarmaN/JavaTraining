@@ -1,5 +1,8 @@
 package javatraining.W3Resource.basic_part1;
 
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+
 public class CommonDigitNumber {
     public boolean checkCommonDigit(int first, int second){
         //check if first integer and second integer is present
@@ -16,10 +19,25 @@ public class CommonDigitNumber {
         }
         return false;
     }
+
+    public boolean checkCommonDigitUsingStream(int first, int second){
+        //check if first integer and second integer is present
+        if (first<=0 || second<=0){
+            System.out.println("Input parameters are missing");
+        }
+        OptionalInt lastDigitOfFirstNumber = IntStream.range(25,75).filter(n->n==first).map(n->first%10).findFirst();
+        OptionalInt lastDigitOfSecondNumber = IntStream.range(25,75).filter(n->n==second).map(n->second%10).findFirst();
+        if (lastDigitOfFirstNumber.getAsInt()==lastDigitOfSecondNumber.getAsInt()){
+            return true;
+        }
+        return false;
+    }
     public static void main(String[] args) {
         int first = 35;
         int second = 45;
         CommonDigitNumber objCommonDigitNumber = new CommonDigitNumber();
-        System.out.println(objCommonDigitNumber.checkCommonDigit(first, second));
+        System.out.println("The common digit : "+objCommonDigitNumber.checkCommonDigit(first, second));
+        //using stream
+        System.out.println("The common digit using stream : "+objCommonDigitNumber.checkCommonDigitUsingStream(first,second));
     }
 }

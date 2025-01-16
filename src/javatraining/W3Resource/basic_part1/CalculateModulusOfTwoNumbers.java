@@ -1,5 +1,7 @@
 package javatraining.W3Resource.basic_part1;
 
+import java.util.stream.IntStream;
+
 public class CalculateModulusOfTwoNumbers {
     public int getModulusOfTwoNumbers(int dividend, int divisor){
         if (dividend<=0 || divisor <=0){

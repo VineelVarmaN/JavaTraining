@@ -11,6 +11,7 @@ public class CheckSubtractionDifference {
     return false;
     }
 
+
     public static void main(String[] args) {
         int first = 15;
         int second = 20;
