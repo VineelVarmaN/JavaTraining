@@ -19,7 +19,6 @@ public class CheckAdjacent10sOr20s {
         }
         return found1010 ^ found2020;
     }
-
     public static boolean getCheckAdjacentValuesUsingStream(int[] integers){
         boolean has10NextTo10 = IntStream.range(0, integers.length - 1)
                 .anyMatch(i -> integers[i] == 10 && integers[i + 1] == 10);
