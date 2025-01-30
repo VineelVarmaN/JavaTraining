@@ -5,7 +5,6 @@ import java.util.stream.IntStream;
 public class TenBeforeTwentyCheck {
     public static boolean checkTenBeforeTwenty(int[] numbers){
         boolean found10 = false;
-        boolean found20 = false;
         for (int i = 0; i<numbers.length-1; i++){
             if (numbers[i]==10){
                 found10 = true;
