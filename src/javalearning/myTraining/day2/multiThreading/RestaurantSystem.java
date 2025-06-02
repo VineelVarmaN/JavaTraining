@@ -6,7 +6,7 @@ package javalearning.myTraining.day2.multiThreading;
  * example: Restaurant Kitchen with a couple of employess
  *  employee1 will handle Orders and prepare food
  *  employee2 will handle payments
- *  here, both chefs work at same time making the restaurant faster
+ *  here, both chefs work at same time making the restaurant run faster
  *
  *  Ways to create a thread in java
  *  1.  By Extending the Thread class
@@ -23,7 +23,7 @@ class OrderProcessing extends Thread{
        for (int i = 1; i<=5; i++){
            System.out.println("Processing order #"+i);
            try {
-               Thread.sleep(1000); //pauses for 1 second
+               Thread.sleep(1500); //pauses for 1.5 second
            } catch (InterruptedException e) {
                throw new RuntimeException(e);
            }
@@ -37,7 +37,7 @@ class PaymentProcessing extends Thread{
         for (int i = 1; i<=5; i++){
             System.out.println("Processing payment for Order #"+i);
             try {
-                Thread.sleep(1500); //pauses for 1.5 second
+                Thread.sleep(1000); //pauses for 1.0 second
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -47,6 +47,7 @@ class PaymentProcessing extends Thread{
 }
 public class RestaurantSystem {
     public static void main(String[] args) {
+        //creating objects for both classes
         OrderProcessing orderThread = new OrderProcessing();
         PaymentProcessing paymentThread = new PaymentProcessing();
 

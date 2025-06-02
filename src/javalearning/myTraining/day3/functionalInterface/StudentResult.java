@@ -41,7 +41,7 @@ public class StudentResult {
 
         //iterate the student list and apply the lambda expression check
         for (Student student: studentList){
-            //with functional interface object, calling the abstract method to check each
+
             //student score matches with lambda expression marks criteria
             String result = scoreEvaluator.isPassed(student.score)? "PASSED":"FAILED";
             System.out.println(student.name+" with "+student.score+" : "+result);
