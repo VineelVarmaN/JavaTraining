@@ -24,6 +24,7 @@ import java.util.regex.*;
         public static String findDay(int month, int day, int year) {
             final int BC = 0;
             Calendar rightNow = Calendar.getInstance();
+            System.out.println(rightNow);
             return "";
         }
 
