@@ -17,7 +17,7 @@ public class SeedingPatterns {
     private static final Scanner SCANNER = new Scanner(System.in);
     public static void main(String[] args) {
         int n = SCANNER.nextInt();
-        for (int i = 0; i<=n;i++){
+        for (int i = 1; i<=n;i++){
             for (int j = n; j<=n && j>0; j--){
                 if(i<=j)
                 {
