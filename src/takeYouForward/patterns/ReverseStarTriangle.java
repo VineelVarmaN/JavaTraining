@@ -1,0 +1,35 @@
+package takeYouForward.patterns;
+
+import java.util.Scanner;
+
+/**
+ * Ninja was very fond of patterns. For a given integer ‘N’, he wants to make the Reverse N-Star Triangle.
+ * Example:
+ * Input: ‘N’ = 3
+ * Output:
+ * *****
+ *  ***
+ *   *
+ */
+public class ReverseStarTriangle {
+    private static final Scanner SCANNER = new Scanner(System.in);
+    public static void main(String[] args) {
+        int n = SCANNER.nextInt();
+        //for rows
+        for (int i = 0; i<n; i++){
+            //for spaces
+            for (int j = 0; j<i; j++){
+                System.out.print(" ");
+            }
+            //for stars
+            for (int j = 0; j<n*2-(2*i+1); j++){
+                System.out.print("*");
+            }
+            //for spaces
+            for (int j = 0; j<i; j++){
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
