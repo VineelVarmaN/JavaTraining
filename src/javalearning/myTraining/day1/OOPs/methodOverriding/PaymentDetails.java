@@ -37,6 +37,7 @@ class PayPal extends Payment {
 
 public class PaymentDetails {
     public static void main(String[] args) {
+        //created object for parent reference and parent object
         Payment p1 = new Payment();
         p1.pay(500);                      // Calls overloaded method
         p1.pay("Credit Card", 1200);      // Calls overloaded method
