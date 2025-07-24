@@ -1,4 +1,4 @@
-package takeYouForward.basics;
+package takeYouForward.baisctopics.basics;
 
 import java.util.Scanner;
 

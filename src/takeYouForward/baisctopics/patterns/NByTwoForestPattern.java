@@ -1,4 +1,4 @@
-package takeYouForward.patterns;
+package takeYouForward.baisctopics.patterns;
 /**
  * Sam is making a forest visualizer. An N-dimensional forest is represented by the pattern of size NxN filled with ‘*’.
  * An N/2-dimensional forest is represented by the lower triangle of the pattern filled with ‘*’.

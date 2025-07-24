@@ -11,13 +11,6 @@ public class ReverseInteger {
         }
         int outputNumber = Integer.parseInt(output);
         System.out.println(outputNumber);
-        /* if (a < 0){
-            int reverseNegativeInteger = outputNumber * -1;
-            System.out.println(reverseNegativeInteger);
-        }
-        else {
-            System.out.println(outputNumber);
-        } */
         return a;
     }
 
