@@ -1,9 +1,8 @@
-package javaCoding.interviewBit;
+package javaCoding.interviewBit.hashing;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
@@ -18,23 +17,24 @@ import java.util.stream.Collectors;
  */
 public class LongestConsecutiveSequence {
     public static int longestConsecutive(final List<Integer> A) {
-        int longest = 1;
-        List<Integer> minimumLongest = new ArrayList<>();
-        List<Integer> uniqueList = A.stream().distinct().sorted().toList();
-        //System.out.println(uniqueList);
-        //System.out.println(uniqueList.size());
-        for (int i = 1; i<uniqueList.size(); i++){
-            if (uniqueList.get(i)==uniqueList.get(i-1)+1){
-                longest++;
-            }
-            else {
-                minimumLongest.add(longest);
-                longest = 1;
+        if(A == null || A.isEmpty()) return 0;
+        HashSet<Integer> set = new HashSet<>(A);
+        System.out.println(set);
+        int maxLength = 0;
+        for(int num: A){
+            if (!set.contains(num - 1)) {
+                int currentNum = num;
+                int currentStreak = 1;
+
+                while (set.contains(currentNum + 1)) {
+                    currentNum++;
+                    currentStreak++;
+                }
+
+                maxLength = Math.max(maxLength, currentStreak);
             }
         }
-        minimumLongest.add(longest);
-        //System.out.println(minimumLongest);
-     return Collections.max(minimumLongest);
+        return maxLength;
     }
     public static void main(String[] args) {
         //List<Integer> A = new ArrayList<>(List.of(100, 4, 200, 1, 3, 2));
